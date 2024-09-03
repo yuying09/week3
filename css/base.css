@@ -1,0 +1,37 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family:"Noto Sans TC","Roboto";
+}
+.img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    cursor: pointer;
+}
+body{
+    font-family:"Roboto", "Noto Sans TC", sans-serif ;
+    line-height: 1.5;
+}
+button{
+    cursor: pointer;
+}
+
+.container{
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0px 12px;
+}
+
+@media(min-width:992px){
+    .container{
+        max-width:1200px ;
+    }
+}
