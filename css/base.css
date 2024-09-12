@@ -2,11 +2,13 @@
     box-sizing: border-box;
 }
 body{
-    font-family:"Noto Sans TC","Roboto";
+    font-family:"Roboto","Noto Sans TC",sans-serif;
+    line-height: 1.5;
 }
-.img{
+img{
+    object-fit: cover;
     max-width: 100%;
-    height: auto;
+    vertical-align: middle;
 }
 a{
     display: inline-block;
@@ -16,22 +18,28 @@ a{
 a:hover{
     cursor: pointer;
 }
-body{
-    font-family:"Roboto", "Noto Sans TC", sans-serif ;
-    line-height: 1.5;
-}
 button{
     cursor: pointer;
 }
 
+/* header專用container */
+.header-container{
+    max-width: 372px;
+    margin: 0;
+}
+
 .container{
-    max-width: 720px;
+    max-width: 372px;
     margin: 0 auto;
     padding: 0px 12px;
 }
-
+@media(min-width:768px){
+    .container{
+        max-width:696px ;
+    }
+}
 @media(min-width:992px){
     .container{
-        max-width:1200px ;
+        max-width:1320px ;
     }
 }
